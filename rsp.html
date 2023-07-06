@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Multiplayer Rocks Paper Scissors</title>
+
+    <!-- CSS reset sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+    <!-- Our Own CSS File -->
+    <link rel="stylesheet" href="./assets/rsp.css">
+    <link rel="shortcut icon" href="./assets/rock-paper-scissors.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="main-section">
+
+        <div id="swap-zone">
+            <input id="username" placeholder="Name" />
+            <button id="start">Start</button>
+        </div>
+
+        <div id="current-turn"></div>
+
+        <div id="game-div">
+            <div id="player1">
+                <h3 id="player1-name">Player1</h3>
+                <ul>
+                </ul>
+                <div id="player1-chosen"></div>
+                <div class="outcomes">
+                    <div class="win-lose-text" id="player1-win"></div>
+                    <div class="win-lose-text" id="player1-lose"></div>
+                </div>
+            </div>
+
+            <div id="result"></div>
+
+            <div id="player2">
+                <h3 id="player2-name">Player2</h3>
+                <ul>
+                </ul>
+                <div id="player2-chosen"></div>
+                <div class="outcomes">
+                    <div class="win-lose-text" id="player2-win"></div>
+                    <div class="win-lose-text" id="player2-lose"></div>
+                </div>
+            </div>
+        </div>
+        <div class="chatzone">
+            <div id="chat">
+                <div id="chat-messages"></div>
+                <div id="chat-bar">
+                    <input id="chat-input">
+                    <button id="chatSendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="./assets/rsp.js"></script>
+
+</body>
+
+</html>
